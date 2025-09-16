@@ -1,7 +1,37 @@
 .App {
   text-align: center;
-}
+  border:1px solid black;
+  margin:15px 20px 50px 30px;
+  padding: 25px 15px;
 
+}
+.to-do-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.to-do-container ul li{
+  width:170px;
+  overflow-wrap: break-word;
+  list-style-type:"✍️";
+  cursor: pointer;
+}
+.done{
+  text-decoration: line-through;
+  color: gray;
+}
+.todo-item-delete{
+  display :flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.trash{
+  cursor: pointer;
+  margin-left: 10px;
+}
+/* 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +65,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
